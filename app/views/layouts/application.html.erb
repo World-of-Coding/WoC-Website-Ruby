@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>RubyWocSite</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+<html lang="en">
+<head>
+  <%= stylesheet_link_tag 'application.css' %>
+  <%= javascript_include_tag "index.js", defer: true %>
+  <%= render "home/meta" %>
+</head>
+<body>
+<%= render "home/header" %>
+<header id="home">
+  <div class="lhs">
+    <div class="wrap">
+      <h1>/* World of Coding */</h1>
+      <p>A place full of aspiring developers</p>
+      <a target="_blank" href="https://discord.gg/program">JOIN</a>
+    </div>
+  </div>
+  <div class="rhs">
+    <%= image_tag "header"%>
+  </div>
+</header>
+<div class="about" id="about">
+  <div class="lhs2">
+    <%= image_tag "about"%>
+  </div>
+  <div class="rhs2">
+    <div class="heads">
+      <h1>About Us</h1>
+    </div>
+    <div class="txtm">
+      <p>
+        World of Coding is one of Discord's largest programming servers. We have beginners and experienced programmers alike! You can ask for help in                         one of our many programmers channels, and get the attention of programmers to help you out with your problem.
+      </p>
+      <p>
+        Great thing about World of Coding is we also offer help in the terms of cybsersec/tech!
+      </p>
+      <p>
+        Don't know much with programming? No problem!
+      </p>
+      <p>
+        Chill with us in our laid back chat, participate in events and giveaways, and try to get rich with our server economy!
+      </p>
+    </div>
+  </div>
+</div>
+<div class="whyus" id="whyus">
+  <div class="lhs3">
+    <div class="heads2">
+      <h1>Why Us?</h1>
+    </div>
+    <div class="txtm2">
+      <ol>
+        <li id="mem"></li>
+        <li>We provide a place for you to find devs and get help/answers if needed!</li>
+        <li>We have channels where you can show off your creations!</li>
+        <li>If you are looking to hire some devs you can find them here!</li>
+        <li>Find help with your cybersec/tech needs!</li>
+      </ol>
+      <a target="_blank" href="https://discord.gg/program" class="j">JOIN</a>
+    </div>
+  </div>
+  <div class="rhs3">
+    <%= image_tag "why"%>
+  </div>
+</div>
+<%= render "home/footer" %>
+</body>
 </html>

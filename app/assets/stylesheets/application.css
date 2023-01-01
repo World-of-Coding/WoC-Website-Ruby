@@ -1,15 +1,355 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+:root {
+    --main-theme: #1e1e24;
+    --secondary-theme: #fff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: var(--main-theme);
+    overflow: hidden;
+    position: relative;
+    background-position: fixed;
+}
+
+.lhs {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rhs {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rhs img {
+    width: 550px;
+    height: 90vh;
+    filter: brightness(1);
+}
+
+@media screen and (max-width: 1012px) {
+    .rhs {
+        display: none;
+    }
+    .lhs {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("../images/earth.jpg");
+        background-position: fixed;
+        background-size: cover;
+    }
+}
+
+.wrap {
+    color: var(--secondary-theme);
+    text-align: center;
+    position: relative;
+}
+
+.wrap h1 {
+    font-size: 5em;
+}
+
+.wrap p {
+    margin: 5px 0;
+}
+
+.wrap a {
+    width: 120px;
+    height: 40px;
+    border: 2px solid var(--secondary-theme);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+}
+
+.wrap a:hover {
+    outline: 2px solid var(--secondary-theme);
+    outline-offset: 3px;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.stars {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--secondary-theme);
+    position: absolute;
+    z-index: 88;
+    cursor: pointer;
+    animation: blink 4s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50%,
+    60%,
+    70% {
+        opacity: 0;
+    }
+    90%,
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrap h1 {
+        font-size: 2.1em;
+    }
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background: var(--main-theme);
+    display: flex;
+}
+
+.lhs2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+
+.lhs2 img {
+    position: absolute;
+    width: 600px;
+    height: 90vh;
+}
+
+.rhs2 {
+    width: 50%;
+    height: 100vh;
+    color: var(--secondary-theme);
+    padding: 10px;
+}
+
+.heads {
+    margin: 120px 0px;
+    text-align: center;
+}
+
+.heads h1 {
+    font-size: 2.5em;
+    position: relative;
+}
+
+.heads h1::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--secondary-theme);
+    border-radius: 3px;
+}
+
+.heads h1::before {
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-40%);
+    width: 100px;
+    height: 3px;
+    background: var(--secondary-theme);
+    border-radius: 3px;
+}
+
+.txtm p {
+    font-size: 18px;
+    word-spacing: 2.5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .rhs2 {
+        width: 100%;
+        display: flex;
+        height: auto;
+    }
+    .rhs2>* {
+        width: 50%;
+        height: auto;
+    }
+    .heads {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .txtm {
+        padding: 5px;
+        height: auto;
+        text-overflow: ellipsis;
+    }
+    .about {
+        height: auto;
+        overflow: hidden;
+    }
+    .lhs2 {
+        display: none;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .rhs2 {
+        display: block;
+        width: 100%;
+        overflow: auto;
+        height: auto;
+    }
+    .rhs2>* {
+        width: 100%;
+        height: auto;
+    }
+    .about {
+        height: auto;
+        background: var(--main-theme);
+        overflow: auto;
+    }
+    .txtm p {
+        padding: 50px;
+        font-size: 16px;
+    }
+}
+
+.whyus {
+    width: 100%;
+    height: 100vh;
+    background: var(--main-theme);
+    display: flex;
+    overflow: hidden;
+}
+
+.rhs3 {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rhs3 img {
+    width: 550px;
+    height: 90vh;
+    filter: brightness(1);
+}
+
+.lhs3 {
+    width: 50%;
+    height: 100vh;
+    color: var(--secondary-theme);
+    padding: 10px;
+    position: relative;
+}
+
+.heads2 {
+    margin: 120px 0px;
+    text-align: center;
+}
+
+.heads2 h1 {
+    font-size: 2.5em;
+    position: relative;
+}
+
+.heads2 h1::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--secondary-theme);
+    border-radius: 3px;
+}
+
+.heads2 h1::before {
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-40%);
+    width: 100px;
+    height: 3px;
+    background: var(--secondary-theme);
+    border-radius: 3px;
+}
+
+.txtm2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtm2 ol li {
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 1142px) {
+    .rhs3 img {
+        width: 400px;
+        height: 70vh;
+    }
+    .rhs3 {
+        width: 40%;
+    }
+    .lhs3 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 947px),(max-height: 582px) {
+    .rhs3 {
+        display: none;
+    }
+    .lhs3 {
+        width: 100%;
+        padding: 30px;
+        height: auto;
+    }
+    .whyus {
+        height: auto;
+    }
+}
