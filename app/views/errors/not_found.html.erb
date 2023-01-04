@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%= stylesheet_link_tag '404.css' %>
+  <%= javascript_include_tag "404.js", defer: true %>
+  <%= render "home/meta" %>
+</head>
+
+<body>
+<%= render "home/header" %>
+<header>
+  <div class="wrap">
+    <h1>404</h1>
+
+    <iframe class="responsive404" width="560" height="315" src="https://www.youtube.com/embed/E80DNgZVEQ8"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+
+    <p>Looks like you went beyond the world. This world does not exist.</p>
+
+    <a class="button404" href="/">Earth</a>
+  </div>
+</header>
+<%= render "home/footer" %>
+<script>
+    let man = document.getElementById("man");
+    let year = new Date().getFullYear();
+
+    man.innerHTML = `&copy; ${year} Copyright World of Coding`;
+</script>
+</body>
+
+</html>
