@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%= render "home/meta" %>
+  <%= stylesheet_link_tag 'apply.css' %>
+  <%= javascript_include_tag "apply.js", defer: true %>
+</head>
+
+<body>
+<%= render "home/header" %>
+<div class="formDiv">
+  <div class="wrapu">
+    <h1>WoC Staff application</h1>
+    <hr>
+      <div class="responsive">
+        <iframe
+          src="https://docs.google.com/forms/d/1eKdt9nlPldzL9SPVzeYx-5z4DCDP2dT0XzIZ2VBg1fI/viewform?embedded=true"
+          embedded="true"
+          marginheight="0"
+          marginwidth="-10"
+          width="1000"
+          height="640"
+          frameborder="0"
+        >Loading…</iframe>
+      </div>
+  </div>
+</div>
+<%= render "home/footer" %>
+</body>
+
+</html>
