@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%= render "home/meta" %>
+  <%= stylesheet_link_tag 'appeal.css' %>
+  <%= javascript_include_tag "appeal.js", defer: true %>
+</head>
+
+<body>
+<%= render "home/header" %>
+<div class="formDiv">
+  <div class="wrapu">
+    <h1>WoC Ban Appeal</h1>
+    <hr>
+    <form action="/submit" method="POST"></form>
+
+    <div class="responsive">
+      <iframe
+        src="https://docs.google.com/forms/d/1FtKkf_v8lQ2LKwtOq42ShFUH0GvoJirttzpFTbjQQ38/viewform?embedded=true"
+        embedded="true"
+        marginheight="0"
+        marginwidth="-10"
+        width="1000"
+        height="640"
+        frameborder="0"
+      >Loading…</iframe
+      >
+    </div>
+  </div>
+</div>
+<%= render "home/footer" %>
+</body>
+
+</html>

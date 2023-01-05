@@ -4,4 +4,7 @@ class HomeController < ApplicationController
 
   def apply
   end
+
+  def appeal
+  end
 end
