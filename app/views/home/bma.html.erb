@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%= render "home/meta" %>
+  <%= stylesheet_link_tag 'bma.css' %>
+  <%= javascript_include_tag "bma.js", defer: true %>
+</head>
+
+<body>
+<%= render "home/header" %>
+<div class="formDiv">
+  <div class="wrapu">
+    <h1>WoC Appeal Marketplace</h1>
+    <hr>
+      <div class="responsive">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfslSG5iRqQ9XV12-pFk4tUv12Nz1y3kx2RcNOzoGCHZ0NaLg/viewform?embedded=true"
+          embedded="true"
+          marginheight="0"
+          marginwidth="0"
+          width="640"
+          height="600"
+          frameborder="0"
+        >Loading…</iframe>
+      </div>
+  </div>
+</div>
+<%= render "home/footer" %>
+</body>
+
+</html>

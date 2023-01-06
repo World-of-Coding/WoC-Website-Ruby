@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
   get '/apply', to: 'home#apply'
 
-  get 'appeal', to: 'home#appeal'
+  get '/appeal', to: 'home#appeal'
+
+  get '/bma-appeal', to: 'home#bma'
 
   get '/404', to: 'errors#not_found'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

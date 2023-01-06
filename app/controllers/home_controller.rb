@@ -7,4 +7,7 @@ class HomeController < ApplicationController
 
   def appeal
   end
+
+  def bma
+  end
 end
