@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" />
+  <%= favicon_link_tag 'weather1.png' %>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>&lt;/WoC&gt;</title>
+  <meta name="description" content="A useful bot to check the weather of locations inside Discord without the use of any annoying websites infiltrated with ads!" />
+  <meta name="keywords" content="Weather,time,location,temp" />
+  <meta property="og:title" content="Weather Bot" />
+  <meta property="og:url" content="http://world-of-coding.glitch.me/" />
+  <meta property="og:description" content="A useful bot to check the weather of locations inside Discord without the use of any annoying websites infiltrated with ads!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Weather Bot" />
+  <meta property="og:image" content="https://woc-websitev2.nick20201.repl.co/public/images/weather1.png" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DBDCZFWXT6' );
+      gtag('config', 'G-LKF1DVXV56' );
+  </script>
+
+  <%= stylesheet_link_tag 'weather.css' %>
+  <%= javascript_include_tag "index.js", defer: true %>
+</head>
+
+<body>
+<%= render "home/header" %>
+<div class="formDiv">
+  <div class="wrapu">
+    <h1>Weather Bot!</h1>
+    <hr>
+
+    <div class="responsive">
+      <%= image_tag "weather1", class: "weather" %>
+
+      <a class="button404" href="https://discord.com/api/oauth2/authorize?client_id=975445094343782500&permissions=535528078785&scope=bot%20applications.commands" target="_blank">Invite Weather bot!</a>
+
+    </div>
+  </div>
+
+  <p class="text">
+
+    <b>What is Weather?</b> <br>
+    Unlike using websites, this bot has no ads. No need to go searching for valid websites that then to your surprise only have ads. <br>
+    Although you can use google, it's annoying to open a new browser tab just to check the weather. <br>
+    Why not just send a command to see your local weather? <br>
+    <br>
+
+    <b> Why Weather? </b> <br>
+    • See your Local Weather or other types of weather around the world over Discord ☁️<br> <br>
+    • See your Local Time(s) or time around the world over Discord <br> <br>
+    • View the temperature in °F,°K,°C with the weather command! <br> <br> <br>
+    <b> Perks! </b> <br>
+    • Easy access and simple slash commands!  <br> <br>
+    • 24/7 uptime for help whenever needed!  <br> <br>
+    • Supported by many big communities such as World of Coding the founding server of Weather bot! <br> <br>
+  </p>
+
+
+</div>
+<%= render "home/footer" %>
+</body>
+
+</html>

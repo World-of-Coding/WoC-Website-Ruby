@@ -10,4 +10,7 @@ class HomeController < ApplicationController
 
   def bma
   end
+
+  def weather
+  end
 end
