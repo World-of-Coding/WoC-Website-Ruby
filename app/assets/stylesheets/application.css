@@ -58,7 +58,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: url("../images/earth.jpg");
+        background-image: url(earth.jpg);
         background-position: fixed;
         background-size: cover;
     }
