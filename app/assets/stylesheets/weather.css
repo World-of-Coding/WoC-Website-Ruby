@@ -268,7 +268,7 @@ body::-webkit-scrollbar-thumb {
     width: 250px;
     display: block;
     margin-bottom: 20px;
-    margin-top: -340px;
+    margin-top: -310px;
     margin-left: auto;
     margin-right: auto;
     z-index: 3;
@@ -288,13 +288,16 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 1343px) {
     .text {
-        margin-bottom: -650px;
-        margin-left: -65%;
+        margin-bottom: -960px;
+        margin-left: -75%;
         text-align: center;
     }
-    .wrapu{
-        margin-bottom: 10px;
-        margin-left: 25%;
+    .wrapu {
+        margin-bottom: 80px;
+        margin-left: 30%;
+    }
+    .weather{
+        margin-top: -350px;
     }
     footer {
         margin-top: 25%;
@@ -304,35 +307,37 @@ body::-webkit-scrollbar-thumb {
     .text {
         font-size: 20px;
         margin-left: -69%;
-        margin-top: 3%;
+        margin-top: 15%;
     }
     .wrapu{
-        margin-bottom: 100px;
-        margin-left: 35%;
+        margin-bottom: 300px;
+        margin-top: 150px;
+        margin-left: 38%;
+
     }
-    .weather{
-        margin-top: -270px;
+    .weather {
+        margin-top: -255px;
     }
     footer {
-        margin-top: 25%;
+        margin-top: 55%;
     }
 }
 
 @media screen and (max-width: 724px) {
     .text {
         font-size: 15px;
-        margin-left: -75%;
-        margin-top: 20%;
+        margin-left: -85%;
+        margin-top: 30%;
     }
     .wrapu{
         margin-bottom: 100px;
-        margin-left: 25%;
+        margin-left: 21.5%;
     }
     .weather{
-        margin-top: -270px;
+        margin-top: -250px;
     }
     footer {
-        margin-top: 45%;
+        margin-top: 105%;
     }
 }
 
