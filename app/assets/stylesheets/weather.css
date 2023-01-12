@@ -286,7 +286,7 @@ body::-webkit-scrollbar-thumb {
 }
  */
 
-@media screen and (max-width: 1343px) {
+/* @media screen and (max-width: 1343px) {
     .text {
         margin-bottom: -960px;
         margin-left: -75%;
@@ -294,7 +294,8 @@ body::-webkit-scrollbar-thumb {
     }
     .wrapu {
         margin-bottom: 80px;
-        margin-left: 30%;
+        margin-left: 36%;
+
     }
     .weather{
         margin-top: -350px;
@@ -302,16 +303,18 @@ body::-webkit-scrollbar-thumb {
     footer {
         margin-top: 25%;
     }
-}
+} */
 @media screen and (max-width: 1081px) {
     .text {
         font-size: 20px;
         margin-left: -69%;
-        margin-top: 15%;
+        margin-bottom: -960px;
+        text-align: center;
+
     }
     .wrapu{
-        margin-bottom: 300px;
-        margin-top: 150px;
+        margin-bottom: 360px;
+        margin-top: 10px;
         margin-left: 38%;
 
     }
@@ -319,7 +322,7 @@ body::-webkit-scrollbar-thumb {
         margin-top: -255px;
     }
     footer {
-        margin-top: 55%;
+        margin-top: 45%;
     }
 }
 
@@ -330,7 +333,7 @@ body::-webkit-scrollbar-thumb {
         margin-top: 30%;
     }
     .wrapu{
-        margin-bottom: 100px;
+        margin-bottom: 150px;
         margin-left: 21.5%;
     }
     .weather{
