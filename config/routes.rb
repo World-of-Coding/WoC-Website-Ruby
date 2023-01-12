@@ -9,7 +9,12 @@ Rails.application.routes.draw do
 
   get '/weather', to: 'home#weather'
 
+  get '/weather-tos', to: 'home#weathertos'
+
+  get '/weather-pp', to: 'home#weatherpp'
+
   get '/404', to: 'errors#not_found'
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # Defines the root path route ("/")
   # root "articles#index"

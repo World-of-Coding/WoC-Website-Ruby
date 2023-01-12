@@ -328,7 +328,7 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 724px) {
     .text {
-        font-size: 15px;
+        font-size: 12.5px;
         margin-left: -85%;
         margin-top: 30%;
     }

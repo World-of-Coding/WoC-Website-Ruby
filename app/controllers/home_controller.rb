@@ -13,4 +13,10 @@ class HomeController < ApplicationController
 
   def weather
   end
+
+  def weatherpp
+  end
+
+  def weathertos
+  end
 end
