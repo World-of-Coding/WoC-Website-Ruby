@@ -39,17 +39,19 @@
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
-        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-            document.getElementById("ww_eb94789489453").style.display = "none";
+        if (document.body.scrollTop > 8 || document.documentElement.scrollTop > 8) {
+            document.getElementById("ww_6f60b9bd669ca").style.display = "none";
         }
-        else if(document.body.scrollTop < 11 || document.documentElement.scrollTop < 11) {
-            document.getElementById("ww_eb94789489453").style.display = "block";
+        else if(document.body.scrollTop < 9 || document.documentElement.scrollTop < 9) {
+            document.getElementById("ww_6f60b9bd669ca").style.display = "block";
         }
     }
 </script>
 
-  <div id="ww_eb94789489453" v='1.3' loc='auto' a='{"t":"ticker","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"fahrenheit","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Weather Data Source: <a href="https://wetterlang.de/" id="ww_eb94789489453_u" target="_blank">Wetter für die nächsten 30 tage</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_eb94789489453"></script>
-  <%= render "home/header" %>
+ <!-- <div id="ww_eb94789489453" v='1.3' loc='auto' a='{"t":"ticker","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"fahrenheit","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Weather Data Source: <a href="https://wetterlang.de/" id="ww_eb94789489453_u" target="_blank">Wetter für die nächsten 30 tage</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_eb94789489453"></script>
+  -->
+<div id="ww_6f60b9bd669ca" v='1.3' loc='auto' a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Weather Data Source: <a href="https://wetterlang.de/" id="ww_6f60b9bd669ca_u" target="_blank">Wettervorhersage 30 tage</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_6f60b9bd669ca"></script>
+<%= render "home/header" %>
 <div class="formDiv">
   <div class="wrapu">
 
@@ -65,13 +67,13 @@
 
   <p class="text">
 
-    <b>What is Weather?</b> <br>
+    <b>What is Weather Bot?</b> <br>
     Unlike using websites, this bot has no ads. No need to go searching for valid websites that then to your surprise only have ads. <br>
     Although you can use google, it's annoying to open a new browser tab just to check the weather. <br>
     Why not just send a command to see your local weather? <br>
     <br>
 
-    <b> Why Weather? </b> <br>
+    <b> Why Weather Bot? </b> <br>
     <b>•</b> See your Local Weather or other types of weather around the world over Discord ☁️<br> <br>
     <b>•</b> See your Local Time(s) or time around the world over Discord <br> <br>
     <b>•</b> View the temperature in °F,°K,°C with the weather command! <br> <br> <br>

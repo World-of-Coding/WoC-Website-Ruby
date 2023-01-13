@@ -309,12 +309,12 @@ body::-webkit-scrollbar-thumb {
     .text {
         font-size: 20px;
         margin-left: -69%;
-        margin-bottom: -960px;
+        margin-bottom: -1100px;
         text-align: center;
 
     }
     .wrapu{
-        margin-bottom: 360px;
+        margin-bottom: 250px;
         margin-top: 10px;
         margin-left: 38%;
 
@@ -323,7 +323,7 @@ body::-webkit-scrollbar-thumb {
         margin-top: -255px;
     }
     footer {
-        margin-top: 45%;
+        margin-top: 65%;
     }
 }
 
@@ -334,7 +334,8 @@ body::-webkit-scrollbar-thumb {
         margin-top: 30%;
     }
     .wrapu{
-        margin-bottom: 150px;
+
+        margin-bottom: 120px;
         margin-left: 21.5%;
     }
     .weather{
