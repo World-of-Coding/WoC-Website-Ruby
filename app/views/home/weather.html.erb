@@ -32,16 +32,32 @@
   <%= javascript_include_tag "index.js", defer: true %>
 </head>
 
+
 <body>
-<%= render "home/header" %>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            document.getElementById("ww_eb94789489453").style.display = "none";
+        }
+        else if(document.body.scrollTop < 11 || document.documentElement.scrollTop < 11) {
+            document.getElementById("ww_eb94789489453").style.display = "block";
+        }
+    }
+</script>
+
+  <div id="ww_eb94789489453" v='1.3' loc='auto' a='{"t":"ticker","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"fahrenheit","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Weather Data Source: <a href="https://wetterlang.de/" id="ww_eb94789489453_u" target="_blank">Wetter für die nächsten 30 tage</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_eb94789489453"></script>
+  <%= render "home/header" %>
 <div class="formDiv">
   <div class="wrapu">
+
     <h1>Weather Bot!</h1>
     <hr>
 
     <div class="responsive">
       <%= image_tag "weather1", class: "weather" %>
-
       <a class="button404" href="https://discord.com/api/oauth2/authorize?client_id=975445094343782500&permissions=535528078785&scope=bot%20applications.commands" target="_blank"> 🌧️ Invite Weather bot!</a>
 
     </div>
@@ -56,13 +72,13 @@
     <br>
 
     <b> Why Weather? </b> <br>
-    • See your Local Weather or other types of weather around the world over Discord ☁️<br> <br>
-    • See your Local Time(s) or time around the world over Discord <br> <br>
-    • View the temperature in °F,°K,°C with the weather command! <br> <br> <br>
+    <b>•</b> See your Local Weather or other types of weather around the world over Discord ☁️<br> <br>
+    <b>•</b> See your Local Time(s) or time around the world over Discord <br> <br>
+    <b>•</b> View the temperature in °F,°K,°C with the weather command! <br> <br> <br>
     <b> Perks! </b> <br>
-    • Easy access and simple slash commands!  <br> <br>
-    • 24/7 uptime for help whenever needed!  <br> <br>
-    • Supported by many big communities such as World of Coding the founding server of Weather bot! <br> <br>
+    <b>•</b> Easy access and simple slash commands!  <br> <br>
+    <b>•</b> 24/7 uptime for help whenever needed!  <br> <br>
+    <b>•</b> Supported by many big communities such as World of Coding the founding server of Weather bot! <br> <br>
   </p>
 
 

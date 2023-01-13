@@ -304,6 +304,7 @@ body::-webkit-scrollbar-thumb {
         margin-top: 25%;
     }
 } */
+
 @media screen and (max-width: 1081px) {
     .text {
         font-size: 20px;
