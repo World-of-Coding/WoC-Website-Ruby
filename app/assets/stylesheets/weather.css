@@ -457,6 +457,7 @@ hr {
 }
 
 .responsive a {
+    margin-bottom: 50px;
     width: 220px;
     height: 220px;
     padding: 10px 30px;
@@ -464,6 +465,25 @@ hr {
     color: var(--secondary-theme);
     text-decoration: none;
 }
+
+.buttontospp {
+    margin-top: 50px;
+}
+
+.aweathertos {
+    margin-right: 15%;
+}
+
+.buttontospp a {
+    margin-bottom: 50px;
+    width: 220px;
+    height: 220px;
+    padding: 10px 30px;
+    border: 2px solid var(--secondary-theme);
+    color: var(--secondary-theme);
+    text-decoration: none;
+}
+
 
 @media screen and (max-height: 900px) {
     .formDiv {
