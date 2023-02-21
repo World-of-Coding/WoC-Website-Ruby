@@ -19,4 +19,8 @@ class HomeController < ApplicationController
 
   def weathertos
   end
+
+  def weather404
+  end
+
 end

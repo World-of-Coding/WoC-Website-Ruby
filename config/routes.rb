@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get '/weather-pp', to: 'home#weatherpp'
 
+  get '/weather404', to: 'home#weather404'
+
   get '/404', to: 'errors#not_found'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
