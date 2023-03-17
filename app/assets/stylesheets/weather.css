@@ -475,7 +475,7 @@ hr {
 }
 
 .buttontospp a {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     width: 220px;
     height: 220px;
     padding: 10px 30px;
@@ -489,5 +489,11 @@ hr {
     .formDiv {
         padding: 10%;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .buttontospp a {
+        font-size: 12.5px;
     }
 }
