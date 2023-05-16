@@ -75,7 +75,10 @@ header {
     }
     .wrap p {
 
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .wrap iframe {
+        width: 400px;
     }
 }
 
