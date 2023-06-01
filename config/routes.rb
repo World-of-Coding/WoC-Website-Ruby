@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get '/bma-appeal', to: 'home#bma'
 
+  get '/knowledge-role-application', to: 'home#knowledge-role-application'
+
   get '/weather', to: 'home#weather'
 
   get '/weather-tos', to: 'home#weathertos'

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%= render "home/meta" %>
+  <%= stylesheet_link_tag 'apply.css' %>
+  <%= javascript_include_tag "apply.js", defer: true %>
+</head>
+
+<body>
+<%= render "home/header" %>
+<div class="formDiv">
+  <div class="wrapu">
+    <h1>Knowledge Role Application</h1>
+    <hr>
+    <div class="responsive">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScG-U1nRzdhd_BEPCi3iq6AtgebDypAzFhMcJVtFVwtOtOrhA/viewform?embedded=true"
+              width="640"
+              height="1213"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0">
+        Loading…
+      </iframe>
+
+    </div>
+  </div>
+</div>
+<%= render "home/footer" %>
+</body>
+
+</html>

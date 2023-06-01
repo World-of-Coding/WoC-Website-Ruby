@@ -11,6 +11,9 @@ class HomeController < ApplicationController
   def bma
   end
 
+  def knowledge_role_application
+  end
+
   def weather
   end
 
