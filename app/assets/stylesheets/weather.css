@@ -498,7 +498,21 @@ hr {
     }
 }
 
-a:hover {
+.aweathertos:hover {
+    outline: 2px solid var(--secondary-theme);
+    outline-offset: 3px;
+    border: none;
+    background: rgba(156, 179, 203, 0.8);
+}
+
+.aweatherpp:hover {
+    outline: 2px solid var(--secondary-theme);
+    outline-offset: 3px;
+    border: none;
+    background: rgba(156, 179, 203, 0.8);
+}
+
+.button404:hover {
     outline: 2px solid var(--secondary-theme);
     outline-offset: 3px;
     border: none;
